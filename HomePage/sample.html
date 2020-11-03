@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>CetaCseVce</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+a{
+	text-decoration:none;
+	cursor:pointer;
+
+}
+a.effect-underline:after {content: '';position: absolute;left: 0;display: inline-block;height: 1em;width: 150px;margin-left:20px;border-bottom: 1px solid;margin-top: 10px;opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(0,1); transform: scale(0,1);}
+a.effect-underline:hover:after {opacity: 1;  -webkit-transform: scale(1);  transform: scale(1)}
+header{
+	font-family: Comic Sans Ms;
+	color: #C9C9D7;
+	background-image: url("https://mcdn.wallpapersafari.com/medium/95/20/oKH2lL.png");
+  	background-position: center;
+	background-size: cover;
+}
+h3{
+	font-family:Comic Sans Ms;
+}
+.content1{
+	color:#FCF8F8;
+	bottom:0;
+	display: flex;
+	justify-content:left;
+	font-family:Comic Sans Ms;
+	margin-left: 20px;
+	font-size: 13px;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+footer{
+background-color:#060606;
+}
+marquee{
+	font-family:Comic Sans MS;
+	font-weight:200;
+	font-size:13px;
+	letter-spacing: 2px;
+}
+</style>
+<body>
+
+<header  class="w3-container w3-theme w3-padding" id="myHeader">
+  <div class="w3-center">
+  <h3>Computers Engineers Technical Association(CETA)</h3>
+  <h2 class="w3-xxxlarge w3-animate-bottom"></h2>
+    <div class="w3-padding-32">
+CETA is CSE department student technical association which strives
+ for all round development of students with co-curricular activities like programming contest, technical paper
+ presentation, project expo etc.</div>
+  </div>
+</header>
+
+
+<div class="wrapper">
+   <div class="content" >
+	<div class="card">
+          <a href="up.php" target="_self">
+            <p class="title">Upcoming Events</p>
+            <p class="text">Click To Know More About The Events.</p>
+          </a>
+        </div>
+
+      <div class="card">
+          <a href="results.php" target="_self">
+            <p class="title">Results</p>
+            <p class="text">Check The Winners in one place.</p>   
+          </a>      
+      </div>
+	  
+	  
+      <div class="card">
+          <a href="../registrationhome.php" target="_blank">
+            <p class="title">Login</p>
+            <p class="text">You Can Always Check Your Points In This Section And Keep Yourself Updated In The Race.!</p>
+          </a>         
+      </div>
+      <div class="card">
+          <a href="gallery.php" target="_self">
+            <p class="title">Gallery</p>
+            <p class="text">We Have A Good Collection Of Memories. Click On To Go Down The Lane.</p>        
+          </a>      
+	</div>
+      <div class="card">
+          <a href="contact.php" target="_self">
+            <p class="title">Contact</p>
+            <p class="text">In Case Of Any Queries Or Suggestions, You Can Always Contact Us.!</p>
+          </a>         
+      </div>
+   </div>
+</div>
+<br><br>
+
+	<footer>
+	<div class="content1 ">
+	<div>
+	<br>
+	Developers:<br><br>
+	Ch.Deeksha(17881A0566)<br>
+	Sharan(17881A05G6)<br><br>
+	<a style="text-decoration:underline;color:white"  href="aboutus.php" target="_self">Learn about them..!</a><br><br>
+	</div>
+  </div>
+  </footer>
+</body>
+</html>

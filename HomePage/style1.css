@@ -1,0 +1,131 @@
+body{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+div.e
+{
+	position: absolute;
+	top:180px;
+	left:400px;
+	width:40px;
+	height:40px;
+	
+	animation: box;
+	animation-delay: 3s;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	opacity:0;
+}
+
+div.d
+{
+	border:2px solid black;
+	top:20%;
+	 position: absolute;
+	 left:5%;
+	 text-align: center;
+
+	 
+}
+div.g
+{
+	
+	position:absolute;
+	left:520px;
+	text-align:center;
+	font-size: 15px;
+	font-family: serif;
+	animation: easy;
+	animation-duration: 2s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	color:white;
+}
+.t1
+{
+	font-size: 80px;
+	font-family: sans-serif;
+	text-shadow: 1px 1px white;
+	animation: t1;
+	animation-duration: 1s;
+	opacity:0;
+	animation-fill-mode: forwards;
+	color:#3BDCED;
+}
+.t2
+{
+	font-size: 80px;
+	font-family: sans-serif;
+	text-shadow: 1px 1px white;
+	animation: t2;
+	animation-delay:1s;
+	animation-duration: 1s;
+	opacity:0;
+	animation-fill-mode: forwards;
+	color:#3BDCED;
+
+}
+.t3
+{
+	font-size: 80px;
+	font-family: sans-serif;
+	text-shadow: 1px 1px white;
+	animation: t3;
+	animation-delay:2s;
+	animation-duration:1s;
+	opacity:0;
+	animation-fill-mode: forwards;
+	color:#3BDCED;
+}
+.t4
+{
+	font-size: 80px;
+	font-family: sans-serif;
+	text-shadow: 1px 1px white;
+	animation: t4;
+	animation-delay:3s;
+	animation-duration:1s;
+	opacity:0;
+	animation-fill-mode: forwards;
+	color:#3BDCED;
+}
+@keyframes t1
+{
+	0%{ opacity: 0;}
+	100%{opacity:1;}
+}
+@keyframes t2
+{
+	0%{ opacity: 0;}
+	100%{opacity:1;}
+}
+@keyframes t3
+{
+	0%{ opacity: 0;}
+	100%{opacity:1;}
+}
+@keyframes t4
+{
+	0%{ opacity: 0;}
+	100%{opacity:1;}
+}
+@keyframes easy
+{
+	0%{opacity:0;top:270px;}
+	100%{opacity:1;top:300px;}
+
+}
+
+
+
+
+@keyframes box 
+{
+	0%{background-color:yellow;border-radius: 50% 50% 50% 50%;opacity:1;top:180;left:400;}
+	25%{background-color: red;border-radius: 50% 0 0 0;opacity: 1;top:180;left:830;}
+	50%{background-color: blue;border-radius: 50% 50% 0 0;opacity: 1;top:360;left:830;}
+	75%{background-color: green;border-radius: 50% 50% 50% 0;opacity: 1;top:360;left:400;}
+	100%{background-color:yellow;border-radius: 50% 50% 50% 50%;opacity: 1;top:180;left:400;}
+}

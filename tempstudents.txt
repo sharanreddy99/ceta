@@ -1,0 +1,68 @@
+3rd Year
+insert into students values(1,'sharan','reddy','17881a05g6','sharan3reddy@gmail.com','Sharan@99','8978452025','Male','3rd Year','CSE-C');
+insert into students values(2,'shoeb','reddy','17881a05g7','shoeb3reddy@gmail.com','Sharan@99','8978452026','Male','3rd Year','CSE-C');
+insert into students values(3,'kranthi','reddy','17881a05g8','kranthi3reddy@gmail.com','Sharan@99','8978452027','Male','3rd Year','CSE-C');
+insert into students values(4,'karan','reddy','17881a05g9','karan3reddy@gmail.com','Sharan@99','8978452028','Male','3rd Year','CSE-C');
+insert into students values(5,'shuksh','reddy','17881a05h0','shuksh3reddy@gmail.com','Sharan@99','8978452029','Male','3rd Year','CSE-C');
+insert into students values(6,'bhuksh','reddy','17881a05h1','bhuksh3reddy@gmail.com','Sharan@99','8978452030','Male','3rd Year','CSE-C');
+insert into students values(7,'makash','reddy','17881a05h2','makash3reddy@gmail.com','Sharan@99','8978452031','Male','3rd Year','CSE-C');
+insert into students values(8,'dakash','reddy','17881a05h3','dakash3reddy@gmail.com','Sharan@99','8978452032','Male','3rd Year','CSE-C');
+insert into students values(9,'helsth','reddy','17881a05h4','helsth3reddy@gmail.com','Sharan@99','8978452033','Male','3rd Year','CSE-C');
+insert into students values(10,'balshi','reddy','17881a05h5','balshi3reddy@gmail.com','Sharan@99','8978452034','Male','3rd Year','CSE-C');
+
+insert into students values(11,'basa','reddy','17881a05n6','basare3ddy@gmail.com','Sharan@99','8978452035','Male','3rd Year','CSE-D');
+insert into students values(12,'pasa','reddy','17881a05n7','pasared3dy@gmail.com','Sharan@99','8978452036','Male','3rd Year','CSE-D');
+insert into students values(13,'lasa','reddy','17881a05n8','lasaredd3y@gmail.com','Sharan@99','8978452037','Male','3rd Year','CSE-D');
+insert into students values(14,'mahasa','reddy','17881a05n9','mahasar3eddy@gmail.com','Sharan@99','8978452038','Male','3rd Year','CSE-D');
+insert into students values(15,'kuhasa','reddy','17881a05n0','kuhasare3ddy@gmail.com','Sharan@99','8978452039','Male','3rd Year','CSE-D');
+insert into students values(16,'belshoa','reddy','17881a05p1','belshoar3eddy@gmail.com','Sharan@99','8978452040','Male','3rd Year','CSE-D');
+insert into students values(17,'delshoa','reddy','17881a05p2','delshoare3ddy@gmail.com','Sharan@99','8978452041','Male','3rd Year','CSE-D');
+insert into students values(18,'baxsio','reddy','17881a05p3','baxsioreddy3@gmail.com','Sharan@99','8978452042','Male','3rd Year','CSE-D');
+insert into students values(19,'axiosa','reddy','17881a05p4','axiosareddy@3gmail.com','Sharan@99','8978452043','Male','3rd Year','CSE-D');
+insert into students values(20,'helsap','reddy','17881a05p5','helsapreddy@g3mail.com','Sharan@99','8978452044','Male','3rd Year','CSE-D');
+
+2rd Year
+insert into students values(41,'sharan','reddy','18881a05g6','sharan2reddy@gmail.com','Sharan@99','8978452045','Male','2nd Year','CSE-C');
+insert into students values(42,'shoeb','reddy','18881a05g7','shoebred2dy@gmail.com','Sharan@99','8978452046','Male','2nd Year','CSE-C');
+insert into students values(43,'kranthi','reddy','18881a05g8','kranthi2reddy@gmail.com','Sharan@99','8978452047','Male','2nd Year','CSE-C');
+insert into students values(44,'karan','reddy','18881a05g9','karanreddy2@gmail.com','Sharan@99','8978452048','Male','2nd Year','CSE-C');
+insert into students values(45,'shuksh','reddy','18881a05h0','shukshredd2y@gmail.com','Sharan@99','8978452049','Male','2nd Year','CSE-C');
+insert into students values(46,'bhuksh','reddy','18881a05h1','bhukshreddy2@gmail.com','Sharan@99','8978452050','Male','2nd Year','CSE-C');
+insert into students values(47,'makash','reddy','18881a05h2','makashreddy@2gmail.com','Sharan@99','8978452051','Male','2nd Year','CSE-C');
+insert into students values(48,'dakash','reddy','18881a05h3','dakashreddy@g2mail.com','Sharan@99','8978452052','Male','2nd Year','CSE-C');
+insert into students values(49,'helsth','reddy','18881a05h4','helsthreddy@gm2ail.com','Sharan@99','8978452053','Male','2nd Year','CSE-C');
+insert into students values(50,'balshi','reddy','18881a05h5','balshireddy@gma2il.com','Sharan@99','8978452054','Male','2nd Year','CSE-C');
+
+insert into students values(51,'basa','reddy','18881a05n6','basare2ddy@gmail.com','Sharan@99','8978452055','Male','2nd Year','CSE-D');
+insert into students values(52,'pasa','reddy','18881a05n7','pasared2dy@gmail.com','Sharan@99','8978452056','Male','2nd Year','CSE-D');
+insert into students values(53,'lasa','reddy','18881a05n8','lasaredd2y@gmail.com','Sharan@99','8978452057','Male','2nd Year','CSE-D');
+insert into students values(54,'mahasa','reddy','18881a05n9','mahasar2eddy@gmail.com','Sharan@99','8978452058','Male','2nd Year','CSE-D');
+insert into students values(55,'kuhasa','reddy','18881a05n0','kuhasare2ddy@gmail.com','Sharan@99','8978452059','Male','2nd Year','CSE-D');
+insert into students values(56,'belshoa','reddy','18881a05p1','belshoar2eddy@gmail.com','Sharan@99','8978452060','Male','2nd Year','CSE-D');
+insert into students values(57,'delshoa','reddy','18881a05p2','delshoare22ddy@gmail.com','Sharan@99','8978452061','Male','2nd Year','CSE-D');
+insert into students values(58,'baxsio','reddy','18881a05p3','baxsioreddy@2gmail.com','Sharan@99','8978452062','Male','2nd Year','CSE-D');
+insert into students values(59,'axiosa','reddy','18881a05p4','axiosareddy@g2mail.com','Sharan@99','8978452063','Male','2nd Year','CSE-D');
+insert into students values(60,'helsap','reddy','18881a05p5','helsapreddy@gm2ail.com','Sharan@99','8978452064','Male','2nd Year','CSE-D');
+
+4rd Year
+insert into students values(21,'sharan','reddy','16881a05g6','shara4nreddy@gmail.com','Sharan@99','8978452065','Male','4th Year','CSE-C');
+insert into students values(22,'shoeb','reddy','16881a05g7','shoebre4ddy@gmail.com','Sharan@99','8978452066','Male','4th Year','CSE-C');
+insert into students values(23,'kranthi','reddy','16881a05g8','kranth4ireddy@gmail.com','Sharan@99','8978452067','Male','4th Year','CSE-C');
+insert into students values(24,'karan','reddy','16881a05g9','karanredd4y@gmail.com','Sharan@99','8978452068','Male','4th Year','CSE-C');
+insert into students values(25,'shuksh','reddy','16881a05h0','shukshred4dy@gmail.com','Sharan@99','8978452069','Male','4th Year','CSE-C');
+insert into students values(26,'bhuksh','reddy','16881a05h1','bhukshredd4y@gmail.com','Sharan@99','8978452070','Male','4th Year','CSE-C');
+insert into students values(27,'makash','reddy','16881a05h2','makashreddy4@gmail.com','Sharan@99','8978452071','Male','4th Year','CSE-C');
+insert into students values(28,'dakash','reddy','16881a05h3','dakashreddy@4gmail.com','Sharan@99','8978452072','Male','4th Year','CSE-C');
+insert into students values(29,'helsth','reddy','16881a05h4','helsthreddy@g4mail.com','Sharan@99','8978452073','Male','4th Year','CSE-C');
+insert into students values(30,'balshi','reddy','16881a05h5','balshireddy@gm4ail.com','Sharan@99','8978452074','Male','4th Year','CSE-C');
+
+insert into students values(31,'basa','reddy','16881a05n6','basa4reddy@gmail.com','Sharan@99','8978452075','Male','4th Year','CSE-D');
+insert into students values(32,'pasa','reddy','16881a05n7','pasar4eddy@gmail.com','Sharan@99','8978452076','Male','4th Year','CSE-D');
+insert into students values(33,'lasa','reddy','16881a05n8','lasare4ddy@gmail.com','Sharan@99','8978452077','Male','4th Year','CSE-D');
+insert into students values(34,'mahasa','reddy','16881a05n9','mahas4areddy@gmail.com','Sharan@99','8978452078','Male','4th Year','CSE-D');
+insert into students values(35,'kuhasa','reddy','16881a05n0','kuhasa4reddy@gmail.com','Sharan@99','8978452079','Male','4th Year','CSE-D');
+insert into students values(36,'belshoa','reddy','16881a05p1','belsho4areddy@gmail.com','Sharan@99','8978452080','Male','4th Year','CSE-D');
+insert into students values(37,'delshoa','reddy','16881a05p2','delshoa44reddy@gmail.com','Sharan@99','8978452081','Male','4th Year','CSE-D');
+insert into students values(38,'baxsio','reddy','166881a05p3','baxsiored4dy@gmail.com','Sharan@99','8978452082','Male','4th Year','CSE-D');
+insert into students values(39,'axiosa','reddy','16881a05p4','axiosareddy4@gmail.com','Sharan@99','8978452083','Male','4th Year','CSE-D');
+insert into students values(40,'helsap','reddy','16881a05p5','helsapreddy4@gmail.com','Sharan@99','8978452084','Male','4th Year','CSE-D');

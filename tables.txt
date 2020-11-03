@@ -1,0 +1,76 @@
+CREATE TABLE `students` (
+ `sid` int(11) NOT NULL,
+ `fname` varchar(20) NOT NULL,
+ `lname` varchar(20) NOT NULL,
+ `rollno` varchar(11) NOT NULL,
+ `email` varchar(40) NOT NULL,
+ `password` varchar(30) NOT NULL,
+ `mobile` varchar(11) NOT NULL,
+ `gender` varchar(7) NOT NULL,
+ `year` varchar(9) NOT NULL,
+ `branch` varchar(6) NOT NULL,
+ `profilepic` BLOB NULL DEFAULT NULL,
+ PRIMARY KEY (`sid`,`fname`),
+ UNIQUE KEY `rollno` (`rollno`),
+ UNIQUE KEY `rollno_2` (`rollno`),
+ UNIQUE KEY `email` (`email`,`mobile`)
+); 
+
+
+CREATE TABLE `faculty` (
+ `fid` int(11) NOT NULL,
+ `fname` varchar(20) NOT NULL,
+ `lname` varchar(20) NOT NULL,
+ `email` varchar(40) NOT NULL,
+ `pass` varchar(20) NOT NULL,
+ `mobile` varchar(11) NOT NULL,
+ `gender` varchar(7) NOT NULL,
+ `profilepic` BLOB NULL DEFAULT NULL,
+ PRIMARY KEY (`fid`,`fname`),
+ UNIQUE KEY `email` (`email`),
+ UNIQUE KEY `mobile` (`mobile`)
+);
+
+CREATE TABLE `eventsnew` (
+ `eid` int(11) NOT NULL,
+ `ename` varchar(100) NOT NULL,
+ `dateofevent` date NOT NULL,
+ `availability` varchar(4) NOT NULL,
+ PRIMARY KEY (`eid`)
+);
+
+CREATE TABLE `eventsold` (
+ `eid` int(11) NOT NULL,
+ `ename` varchar(100) NOT NULL,
+ `dateofevent` date NOT NULL,
+ PRIMARY KEY (`eid`)
+);
+
+CREATE TABLE `yreventsnew` (
+ `eid` int(11) NOT NULL,
+ `year` varchar(9) NOT NULL,
+ KEY `yreventsnew_ibfk_1` (`eid`),
+ CONSTRAINT `yreventsnew_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `eventsnew` (`eid`) ON DELETE CASCADE
+); 
+
+CREATE TABLE `yreventsold` (
+ `eid` int(11) NOT NULL,
+ `year` varchar(9) NOT NULL,
+ KEY `yreventsold_ibfk_1` (`eid`),
+ CONSTRAINT `yreventsold_ibfk_1` FOREIGN KEY (`eid`) REFERENCES `eventsold` (`eid`) ON DELETE CASCADE
+); 
+
+CREATE TABLE `ceta`.`event_pass` ( `pin` VARCHAR(20) NOT NULL , `used` INT NOT NULL DEFAULT '0' );
+
+CREATE TABLE `feedback` (
+ `fname` varchar(20) NOT NULL,
+ `lname` varchar(20) NOT NULL,
+ `rollno` varchar(11) NOT NULL,
+ `feedback` varchar(150) NOT NULL
+);
+
+CREATE TABLE `ceta`.`volunteers` ( `fname` VARCHAR(20) NOT NULL , `lname` VARCHAR(20) NOT NULL , `rollno` VARCHAR(11) NOT NULL , `year` VARCHAR(9) NOT NULL , `branch` VARCHAR(10) NOT NULL , `mobile` VARCHAR(11) NOT NULL );
+
+CREATE TABLE `ceta`.`adminpassword` ( `pin` VARCHAR(40) NOT NULL );
+
+CREATE TABLE passedoutstudents ( `fname` VARCHAR(30) NOT NULL , `lname` VARCHAR(20) NOT NULL , `rollno` VARCHAR(11) NOT NULL , `email` VARCHAR(30) NOT NULL , `password` VARCHAR(30) NOT NULL , `mobile` VARCHAR(11) NOT NULL , `gender` VARCHAR(8) NOT NULL , `branch` VARCHAR(6) NOT NULL , `passout` INT NOT NULL );
