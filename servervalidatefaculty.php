@@ -58,9 +58,15 @@
 					$res2 = $conn->query($sql2);
 					$res2 = $res2->fetch_row();
 					$adminpin = $res2[0];
-					
-					
-					if($res1->num_rows>0 && $pin!=$adminpin)
+					if($res1->num_rows>0){
+						echo "<script> setTimeout(function(){
+							$('#validatealert').modal('hide');
+						},2000);
+						$('.modal-body').html('<b> Faculty already registered .');
+						$('#validatealert').modal('show');
+						</script>";	
+					}
+					else if($pin!=$adminpin)
 					{
 						echo "<script> setTimeout(function(){
 							$('#validatealert').modal('hide');
@@ -69,7 +75,6 @@
 						$('#validatealert').modal('show');
 						</script>";
 					}
-					
 					else
 					{
 						$sql = "select max(fid) from faculty;";

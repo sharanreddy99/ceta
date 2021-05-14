@@ -72,5 +72,6 @@ CREATE TABLE `feedback` (
 CREATE TABLE `volunteers` ( `fname` VARCHAR(20) NOT NULL , `lname` VARCHAR(20) NOT NULL , `rollno` VARCHAR(11) NOT NULL , `year` VARCHAR(9) NOT NULL , `branch` VARCHAR(10) NOT NULL , `mobile` VARCHAR(11) NOT NULL );
 
 CREATE TABLE `adminpassword` ( `pin` VARCHAR(40) NOT NULL );
+INSERT INTO `adminpassword` values("secretcodeforadmin");
 
 CREATE TABLE passedoutstudents ( `fname` VARCHAR(30) NOT NULL , `lname` VARCHAR(20) NOT NULL , `rollno` VARCHAR(11) NOT NULL , `email` VARCHAR(30) NOT NULL , `password` VARCHAR(30) NOT NULL , `mobile` VARCHAR(11) NOT NULL , `gender` VARCHAR(8) NOT NULL , `branch` VARCHAR(6) NOT NULL , `passout` INT NOT NULL );
