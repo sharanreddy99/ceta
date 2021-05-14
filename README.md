@@ -17,8 +17,6 @@ A website used for organizing technical events in college and keeping track of a
 
 3) execute all the queries in tables.txt file in the database server
 
-
-### Project URL : https://cetawebapp.herokuapp.com/
 # credentials for faculty:
     email: sharan@gmail.com
     password: Sharan@99
