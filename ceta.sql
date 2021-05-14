@@ -27,8 +27,8 @@ SET time_zone = "+00:00";
 --
 -- Table structure for table `eventsnew`
 --
-create database ceta;
-use ceta;
+-- create database ceta;
+-- use ceta;
 
 CREATE TABLE `eventsnew` (
   `eid` int(11) NOT NULL,
