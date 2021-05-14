@@ -20,15 +20,14 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `ceta`
---
+-- create database ceta;
+-- use ceta;
 
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `eventsnew`
 --
--- create database ceta;
--- use ceta;
 
 CREATE TABLE `eventsnew` (
   `eid` int(11) NOT NULL,
@@ -36,6 +35,18 @@ CREATE TABLE `eventsnew` (
   `dateofevent` date NOT NULL,
   `availability` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `adminpassword`
+--
+
+CREATE TABLE `adminpassword` (
+  `secret` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `adminpassword` values("secretcodeforadmin");
 
 -- --------------------------------------------------------
 
