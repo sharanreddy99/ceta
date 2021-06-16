@@ -8,9 +8,9 @@ environments:
     production:
         adapter: mysql
         host: db
-        name: ${CETA_DATABASE}
-        user: ${CETA_MYSQL_USER}
-        pass: '${CETA_MYSQL_PASSWORD}'
+        name: '%%PHINX_CETA_DATABASE%%'
+        user: '%%PHINX_CETA_MYSQL_USER%%'
+        pass: '%%PHINX_CETA_MYSQL_PASSWORD%%'
         port: 3306
         charset: utf8
 
