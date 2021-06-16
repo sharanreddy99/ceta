@@ -31,7 +31,7 @@ class CreateYearEventsNewTable extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('yreventsnew',['id' => false, 'primary_key' => ['eid']]);
+        $table = $this->table('yreventsnew',['id' => false]);
         $table->addColumn('eid', 'integer')
             ->addColumn('year', 'string', ['limit' => 9, 'null' => false])
             ->addForeignKey('eid','eventsnew','eid',['delete'=> 'CASCADE'])

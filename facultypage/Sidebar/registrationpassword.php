@@ -107,26 +107,38 @@
 						if(isset($_POST["genpass"]))
 						{
 							
-							$sql="CREATE TABLE `ceta`.`pingenerator` ( `pin` VARCHAR(20) NOT NULL , `used` INT NOT NULL DEFAULT '0' )";
+							$sql="CREATE TABLE ".$db.".pingenerator ( `pin` VARCHAR(20) NOT NULL , `used` INT NOT NULL DEFAULT '0' )";
 							if($conn->query($sql))
 							{
-								echo("
-								<script> setTimeout(function () {
-								$('#eventsmodal').modal('hide');
-								}, 1500);
-								$('#eventsmodal').modal('show');
-								$('.modal-body').html('Registration Password generated successfully.');
-								</script>");
-
 								$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-						
-								for($i=0;$i<240;$i++)
-								{
+									$sql = "insert into pingenerator values";
+									$sep = ",";
+									$totpasscount = 240;
+									for($i=0;$i<$totpasscount;$i++)
+									{
 									$pass = substr(str_shuffle($alphabet),0,10);
-								
-									$sql="insert into pingenerator values('$pass',0)";
-									$conn->query($sql);
-								}
+									if($i == $totpasscount-1) {
+										$sep = ";";
+									}
+									$sql.="('$pass',0)".$sep;
+									}
+									if($conn->query($sql)){
+										echo("<script> setTimeout(function () {
+											$('#eventsmodal').modal('hide');
+											}, 1500);
+											$('#eventsmodal').modal('show');
+											$('.modal-body').html('Registration Passwords generated successfully.');
+										
+										</script>");
+									}else {
+										echo("<script> setTimeout(function () {
+											$('#eventsmodal').modal('hide');
+											}, 1500);
+											$('#eventsmodal').modal('show');
+											$('.modal-body').html('Registration Password generation failed.');
+										
+										</script>");
+									}
 							}
 								
 							else{

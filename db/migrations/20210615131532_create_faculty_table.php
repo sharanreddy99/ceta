@@ -36,7 +36,6 @@ class CreateFacultyTable extends AbstractMigration
         $table->addColumn('fid', 'integer')
             ->addColumn('fname', 'string', ['limit' => 20])
             ->addColumn('lname', 'string', ['limit' => 20, 'null' => false])
-            ->addColumn('rollno', 'string', ['limit' => 11, 'null' => false])
             ->addColumn('email', 'string', ['limit' => 40, 'null' => false])
             ->addColumn('pass', 'string', ['limit' => 20, 'null' => false])
             ->addColumn('mobile', 'string', ['limit' => 11, 'null' => false])

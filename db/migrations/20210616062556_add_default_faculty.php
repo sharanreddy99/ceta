@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class CreateYearEventsOldTable extends AbstractMigration
+class AddDefaultFaculty extends AbstractMigration
 {
     /**
      * Change Method.
@@ -31,15 +31,23 @@ class CreateYearEventsOldTable extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('yreventsold',['id' => false]);
-        $table->addColumn('eid', 'integer')
-            ->addColumn('year', 'string', ['limit' => 9, 'null' => false])
-            ->addForeignKey('eid','eventsold','eid',['delete'=> 'CASCADE'])
-            ->create();
+        $table = $this->table('faculty');
+        $singleRow = [
+            'fid'  => 1,
+            'fname' => 'sharan',
+            'lname' => 'reddy',
+            'email' => 'sharan@gmail.com',
+            'pass' => 'Sharan@123',
+            'mobile' => '1234567890',
+            'gender' => 'Male',
+            'profilepic' => NULL
+        ];
+        $table->insert($singleRow);
+        $table->saveData();
     }
 
     public function down()
     {
-        $this->table('yreventsold')->dropForeignKey('eid')->drop()->save();
+        $this->execute('DELETE FROM faculty where email = "sharan@gmail.com"');
     }
 }

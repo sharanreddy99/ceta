@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class CreateYearEventsOldTable extends AbstractMigration
+class AddDefaultStudent extends AbstractMigration
 {
     /**
      * Change Method.
@@ -31,15 +31,26 @@ class CreateYearEventsOldTable extends AbstractMigration
      */
     public function up()
     {
-        $table = $this->table('yreventsold',['id' => false]);
-        $table->addColumn('eid', 'integer')
-            ->addColumn('year', 'string', ['limit' => 9, 'null' => false])
-            ->addForeignKey('eid','eventsold','eid',['delete'=> 'CASCADE'])
-            ->create();
+        $table = $this->table('students');
+        $singleRow = [
+            'sid'  => 1,
+            'fname' => 'sharan',
+            'lname' => 'reddy',
+            'rollno' => '17881a05g6',
+            'email' => 'sharanreddy@gmail.com',
+            'password' => 'Sharan@123',
+            'mobile' => '1234567890',
+            'gender' => 'Male',
+            'year' => '4th Year',
+            'branch' => 'CSE-C',
+            'profilepic' => NULL
+        ];
+        $table->insert($singleRow);
+        $table->saveData();
     }
 
     public function down()
     {
-        $this->table('yreventsold')->dropForeignKey('eid')->drop()->save();
+        $this->execute('DELETE FROM students where rollno ="17881a05g6"');
     }
 }

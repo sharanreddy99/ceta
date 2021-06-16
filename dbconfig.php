@@ -1,6 +1,6 @@
 <?php
-    $user = $ENV["CETA_MYSQL_USER"];
-    $pass = $ENV["CETA_MYSQL_PASSWORD"];
-    $db   = $ENV["CETA_DATABASE"];
+    $user = getenv("CETA_MYSQL_USER");
+    $pass = getenv("CETA_MYSQL_PASSWORD");
+    $db   = getenv("CETA_DATABASE");
     $server_name = "db";
 ?>

@@ -152,24 +152,37 @@
 						{
 							if($_POST["ename"]!="select")
 							{
-								$sql="CREATE TABLE `ceta`.`event_pass` ( `pin` VARCHAR(20) NOT NULL , `used` INT NOT NULL DEFAULT '0' )";
+								$sql="CREATE TABLE ".$db.".event_pass ( `pin` VARCHAR(20) NOT NULL , `used` INT NOT NULL DEFAULT '0' )";
 								if($conn->query($sql))
 								{
-									echo("<script> setTimeout(function () {
-										$('#eventsmodal').modal('hide');
-										}, 1500);
-										$('#eventsmodal').modal('show');
-										$('.modal-body').html('Events Password generated successfully.');
-									
-									</script>");
 									$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
-							
-									for($i=0;$i<240;$i++)
+									$sql = "insert into event_pass values";
+									$sep = ",";
+									$totpasscount = 240;
+									for($i=0;$i<$totpasscount;$i++)
 									{
 									$pass = substr(str_shuffle($alphabet),0,10);
-								
-									$sql="insert into event_pass values('$pass',0)";
-									$conn->query($sql);
+									if($i == $totpasscount-1) {
+										$sep = ";";
+									}
+									$sql.="('$pass',0)".$sep;
+									}
+									if($conn->query($sql)){
+										echo("<script> setTimeout(function () {
+											$('#eventsmodal').modal('hide');
+											}, 1500);
+											$('#eventsmodal').modal('show');
+											$('.modal-body').html('Events Password generated successfully.');
+										
+										</script>");
+									}else {
+										echo("<script> setTimeout(function () {
+											$('#eventsmodal').modal('hide');
+											}, 1500);
+											$('#eventsmodal').modal('show');
+											$('.modal-body').html('Events Password generation failed.');
+										
+										</script>");
 									}
 								}
 								
