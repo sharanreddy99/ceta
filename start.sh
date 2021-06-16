@@ -8,6 +8,7 @@ echo "mysql connection established..."
 
 cd /var/www/html
 php vendor/bin/phinx migrate -e production
+# php vendor/bin/phinx rollback -e production -t 0
 
 echo -n '\n\nCeta Web Application can be accessed at the following url: '
 tail -n 1 /etc/hosts | awk '{printf $1;}'
