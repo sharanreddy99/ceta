@@ -91,7 +91,7 @@
 				<tbody>
 					<?php 
 
-						require "../../detailsofdemo.php";
+						require "../../dbconfig.php";
 						$conn = new mysqli($server_name,$user,$pass,$db);
 
 						session_start();

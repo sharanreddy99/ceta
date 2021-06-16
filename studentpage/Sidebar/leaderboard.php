@@ -54,7 +54,7 @@
 			<tbody>
 				<?php
 					
-					include '../../detailsofdemo.php';
+					include '../../dbconfig.php';
 
 					$conn= mysqli_connect($server_name,$user,$pass,$db);
 					if (mysqli_connect_errno($conn))

@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 		
 		if(isset($_POST["facultylogin"]))
 		{
-			include 'detailsofdemo.php';
+			include 'dbconfig.php';
 			
 			$conn = new mysqli($server_name,$user,$pass,$db);
 			

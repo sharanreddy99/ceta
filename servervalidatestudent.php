@@ -36,7 +36,7 @@
 	<?php
 		if($_SERVER["REQUEST_METHOD"]=="POST")
 		{
-			include 'detailsofdemo.php';
+			include 'dbconfig.php';
 
 			$conn = new mysqli($server_name,$user,$pass,$db);
 			

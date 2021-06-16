@@ -10,7 +10,7 @@
 			
 		$eid = substr($eid,1);
 		
-		include '../../detailsofdemo.php';
+		include '../../dbconfig.php';
 		$conn = new mysqli($server_name,$user,$pass,$db);
 		
 		if(!$conn->connect_error)

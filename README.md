@@ -3,7 +3,7 @@
 A website used for organizing technical events in college and keeping track of attendance and scorecard of each student along with a college level leaderboard.
 
 # Instructions
-1) Create a file named **detailsofdemo.php** in root directory
+1) Create a file named **dbconfig.php** in root directory
 2) add the following configuration to it
 
 ```

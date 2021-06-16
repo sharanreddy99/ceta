@@ -94,7 +94,7 @@ input[type=submit]:hover {
 			<option value="select" selected>select</option>
 			<?php 
 				
-				include '../../detailsofdemo.php';
+				include '../../dbconfig.php';
 				
 				$conn = new mysqli($server_name,$user,$pass,$db);
 				
@@ -139,7 +139,7 @@ input[type=submit]:hover {
 <?php
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
-	include '../../detailsofdemo.php';
+	include '../../dbconfig.php';
 	$conn= mysqli_connect($server_name,$user,$pass,$db);
 	if (mysqli_connect_errno($conn))
 	{

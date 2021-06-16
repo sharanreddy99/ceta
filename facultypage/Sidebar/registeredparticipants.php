@@ -98,7 +98,7 @@
 			<select class="custom-select hovering" name="ename" id="selectoption1" aria-label="options">
 				<option  name='choose' selected> Choose...</option>
 				<?php 
-					require('../../detailsofdemo.php');
+					require('../../dbconfig.php');
 					$conn = new mysqli($server_name,$user,$pass,$db);
 					
 					if(!$conn->connect_error)
@@ -170,7 +170,7 @@
 					{
 						$year = $_POST["year"];
 						$branch = $_POST["branch"];
-						require('../../detailsofdemo.php');
+						require('../../dbconfig.php');
 
 						$conn= mysqli_connect($server_name,$user,$pass,$db);
 						if (mysqli_connect_errno($conn))

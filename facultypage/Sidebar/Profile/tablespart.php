@@ -51,7 +51,7 @@
 			<div class="card" >
 				
 				<?php
-					require("../../../detailsofdemo.php");
+					require("../../../dbconfig.php");
 					$conn=mysqli_connect($server_name,$user,$pass,$db);
 					
 					if(!$conn->connect_error)
@@ -74,7 +74,7 @@
 				<div class="card-body m-0 p-0">
 					<?php 
 					
-						require("../../../detailsofdemo.php");
+						require("../../../dbconfig.php");
 						$conn=mysqli_connect($server_name,$user,$pass,$db);
 						
 						if(!$conn->connect_error)

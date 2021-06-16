@@ -81,7 +81,7 @@
 					<select name="ename" class="custom-select hovering"  aria-label="options">
 						<option name='none' selected> Choose...</option>
 						<?php 
-							include '../../detailsofdemo.php';
+							include '../../dbconfig.php';
 							
 							$conn = new mysqli($server_name,$user,$pass,$db);
 							
@@ -137,7 +137,7 @@
 					$ename = $_POST["ename"];
 					$pin=$_POST['pin'];
 					
-					include '../../detailsofdemo.php';
+					include '../../dbconfig.php';
 					$conn = new mysqli($server_name,$user,$pass,$db);
 					
 					if(!$conn->connect_error)

@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  db:
+    container_name: ceta_mysql
+    image: mysql:8.0.1
+    environment:
+      MYSQL_ROOT_PASSWORD: ${CETA_MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${CETA_MYSQL_DATABASE}
+      MYSQL_USER: ${CETA_MYSQL_USER}
+      MYSQL_PASSWORD: ${CETA_MYSQL_PASSWORD}
+  phpmyadmin:
+    container_name: ceta_phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    depends_on: 
+        - db
+    ports:
+      - "${CETA_PHPMYADMIN_PORT}:80"
+  php:
+    container_name: ceta_php
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    environment:
+      CETA_PHPMYADMIN_PORT: ${CETA_PHPMYADMIN_PORT}
+      CETA_PHP_PORT: ${CETA_PHP_PORT}
+      CETA_DATABASE: ${CETA_MYSQL_DATABASE}
+      CETA_MYSQL_USER: ${CETA_MYSQL_USER}
+      CETA_MYSQL_PASSWORD: ${CETA_MYSQL_PASSWORD}
+    depends_on: 
+      - db
+      - phpmyadmin
+    ports:
+       - "${CETA_PHP_PORT}:8080"

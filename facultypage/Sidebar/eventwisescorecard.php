@@ -75,7 +75,7 @@
             <select class="custom-select hovering" name="ename" id="inputGroupSelect01">
               <option selected>Choose...</option>
               <?php 
-                include '../../detailsofdemo.php';
+                include '../../dbconfig.php';
                 $conn = new mysqli($server_name,$user,$pass,$db);
               
                 if(!$conn->connect_error)
@@ -117,7 +117,7 @@
         <tbody>
           <?php
             if($_SERVER["REQUEST_METHOD"]=="POST"){
-              include '../../detailsofdemo.php';
+              include '../../dbconfig.php';
               $conn = new mysqli($server_name,$user,$pass,$db);
               
               if (!mysqli_connect_errno($conn))

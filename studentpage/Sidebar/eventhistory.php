@@ -71,7 +71,7 @@
             <select class="custom-select hovering" name="ename" id="inputGroupSelect01">
               <option selected>Choose...</option>
               <?php 
-                include '../../detailsofdemo.php';
+                include '../../dbconfig.php';
                 $conn = new mysqli($server_name,$user,$pass,$db);
               
                 if(!$conn->connect_error)
