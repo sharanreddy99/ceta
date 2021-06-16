@@ -8,9 +8,9 @@ environments:
     production:
         adapter: mysql
         host: db
-        name: cetadb
-        user: cetauser
-        pass: 'cetapassword'
+        name: ${CETA_DATABASE}
+        user: ${CETA_MYSQL_USER}
+        pass: '${CETA_MYSQL_PASSWORD}'
         port: 3306
         charset: utf8
 
