@@ -135,7 +135,7 @@
 							$sql   = "drop table leaderboard";
 							$conn->query($sql);
 							
-							$sql = "CREATE TABLE `ceta`.`leaderboard` ( `sid` INT NOT NULL , `rollno` VARCHAR(11) NOT NULL , `fname` VARCHAR(30) NOT NULL , `lname` VARCHAR(20) NOT NULL , `year` VARCHAR(10) NOT NULL , `branch` VARCHAR(6) NOT NULL , `score` INT NOT NULL DEFAULT '0' );";
+							$sql = "CREATE TABLE ".$db.".leaderboard ( `sid` INT NOT NULL , `rollno` VARCHAR(11) NOT NULL , `fname` VARCHAR(30) NOT NULL , `lname` VARCHAR(20) NOT NULL , `year` VARCHAR(10) NOT NULL , `branch` VARCHAR(6) NOT NULL , `score` INT NOT NULL DEFAULT '0' );";
 							$conn->query($sql);
 							
 							$sql = "select eid,dateofevent from eventsold";
