@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -142,7 +143,6 @@
 					
 					if(!$conn->connect_error)
 					{
-						session_start();
 						$rollno = $_SESSION['roll'];
 						
 						$sql = "select eid,dateofevent from eventsnew where ename='$ename'";

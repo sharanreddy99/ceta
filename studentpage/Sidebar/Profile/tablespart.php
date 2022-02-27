@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,7 +38,6 @@
 					if(!$conn->connect_error)
 					{
 
-						session_start();
 						$rollno = $_SESSION["roll"];
 						$flag = False;
 						
@@ -46,7 +46,7 @@
 						$res=$conn->query($sql);
 					
 						$row = mysqli_fetch_array($res);
-						echo '<img class="card-img-top" style="height:99vh;" src="data:image/jpeg;base64,'.base64_encode($row[0]).'" alt="">'; 
+						echo '<img class="card-img-top" style="height:99vh;" src="data:image/jpeg;base64,'.$row[0].'" alt="">'; 
 					}
 					
 				?>
@@ -93,9 +93,9 @@
 										$namedbms = "";
 										
 										if($name=="Profile Picture"){
-											$file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-											
-											$sql = "update students set profilepic = '".$file."' where rollno = '".$rollno."';";
+
+											$file = base64_encode(file_get_contents($_FILES["image"]["tmp_name"]));
+											$sql = "update students set profilepic = '$file' where rollno = '$rollno';";
 											$res = $conn->query($sql);
 
 											if($res){

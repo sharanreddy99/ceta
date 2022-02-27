@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -57,7 +58,6 @@
 					if(!$conn->connect_error)
 					{
 
-						session_start();
 						$fname = $_SESSION["fname"];
 						$lname = $_SESSION["lname"];
 						
@@ -65,7 +65,7 @@
 						$res=$conn->query($sql);
 					
 						$row = mysqli_fetch_array($res);
-						echo '<img class="card-img-top" style="height:99vh;" src="data:image/jpeg;base64,'.base64_encode($row[0]).'" alt="">'; 
+						echo '<img class="card-img-top" style="height:99vh;" src="data:image/jpeg;base64,'.$row[0].'" alt="">'; 
 					}
 					
 				?>
@@ -93,9 +93,9 @@
 										$namedbms = "";
 										
 										if($name=="Profile Picture"){
-											$file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+											$file = base64_encode(file_get_contents($_FILES["image"]["tmp_name"]));
 											
-											$sql = "update faculty set profilepic = '".$file."' where fname = '$fname' and lname = '$lname';";
+											$sql = "update faculty set profilepic = '$file' where fname = '$fname' and lname = '$lname';";
 											$res = $conn->query($sql);
 											
 											if($res){

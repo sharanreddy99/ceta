@@ -43,7 +43,7 @@ class CreateStudentsTable extends AbstractMigration
             ->addColumn('gender', 'string', ['limit' => 7, 'null' => false])
             ->addColumn('year', 'string', ['limit' => 9, 'null' => false])
             ->addColumn('branch', 'string', ['limit' => 6, 'null' => false])
-            ->addColumn('profilepic', 'blob', ['limit' => MysqlAdapter::BLOB_REGULAR, 'null' => true, 'default' => null])
+            ->addColumn('profilepic', 'text', ['limit' => MysqlAdapter::TEXT_LONG, 'null' => true, 'default' => null])
             ->addIndex(['rollno', 'email', 'mobile'], ['unique' => true,'name' => 'students_unique_1'])
             ->create();
     }

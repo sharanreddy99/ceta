@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -60,7 +61,6 @@
 					if (!mysqli_connect_errno($conn))
 					{
 					
-						session_start();
 						$roll = $_SESSION["roll"];
 						
 						$sql   = "select eid,ename,dateofevent from eventsold";

@@ -1,5 +1,6 @@
 <?php
-	
+	session_start();
+
 	if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 		$eid = "";
@@ -24,7 +25,6 @@
 			
 			
 			$table_name = $eid."_".$edate;
-			session_start();
 			
 			$roll   = $_SESSION["roll"];
 			$year   = $_SESSION["year"];

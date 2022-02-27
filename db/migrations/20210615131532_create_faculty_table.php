@@ -40,7 +40,7 @@ class CreateFacultyTable extends AbstractMigration
             ->addColumn('pass', 'string', ['limit' => 20, 'null' => false])
             ->addColumn('mobile', 'string', ['limit' => 11, 'null' => false])
             ->addColumn('gender', 'string', ['limit' => 7, 'null' => false])
-            ->addColumn('profilepic', 'blob', ['limit' => MysqlAdapter::BLOB_REGULAR, 'null' => true, 'default' => null])
+            ->addColumn('profilepic', 'text', ['limit' => MysqlAdapter::TEXT_LONG, 'null' => true, 'default' => null])
             ->addIndex(['email', 'mobile'], ['unique' => true,'name' => 'faculty_unique_1'])
             ->create();
     }

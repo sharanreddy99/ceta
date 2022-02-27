@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 		
@@ -21,7 +21,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 				
 				if($res->num_rows==1)
 				{
-					session_start();
 					$_SESSION["conn"]=$conn;
 					$_SESSION['email']=$email_form;
 					$_SESSION['pass']=$pass_form;

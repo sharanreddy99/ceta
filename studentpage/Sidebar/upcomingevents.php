@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   	<head>
@@ -94,7 +95,6 @@
 						require "../../dbconfig.php";
 						$conn = new mysqli($server_name,$user,$pass,$db);
 
-						session_start();
 						$year = $_SESSION["year"];
 
 						if(!$conn->connect_error)

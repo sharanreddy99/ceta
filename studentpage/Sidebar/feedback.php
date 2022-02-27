@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
  	<head>
@@ -52,7 +53,6 @@
 		</script>
 
 		<?php
-			session_start();
 			$fname = ucfirst($_SESSION["fname"]);
 			$lname = ucfirst($_SESSION["lname"]);
 			$roll = strtoupper($_SESSION["roll"]);		

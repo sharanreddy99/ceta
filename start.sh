@@ -1,6 +1,7 @@
 #!/bin/sh
 echo "Waiting for mysql. This may take few more seconds ..."
-while ! curl -o - db:3306; do
+until nc -z -v -w30 db 3306
+do
     >&2 echo "Waiting for mysql. This may take few more seconds ..."
     sleep 10
 done

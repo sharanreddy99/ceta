@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -120,7 +121,6 @@
 					if($_SERVER["REQUEST_METHOD"]=="POST")
 					{
 						
-						session_start();
 						$roll = strtolower($_POST["roll"]);
 						
 						
