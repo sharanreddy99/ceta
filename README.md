@@ -1,9 +1,9 @@
-# Ceta-Website
+# CETA
 
-A website used for organizing technical events in college and keeping track of attendance and scorecard of each student along with a college level leaderboard.
+CETA is a comprehensive technical events management app, empowering admins to effortlessly publish, update, and archive events. Participants register seamlessly, utilizing unique one-time event passwords. The app offers attendee management, personalized scorecards, real-time leaderboards, and flexible event registration controls.
 
 # Instructions
-1) Goto the project directory and execute the command **docker-compose up**
+1) Goto the project directory and execute the command **docker compose up**
 2) Look into the terminal to find the URL for webapp and phpmyadmin
 3) Default Credentials:<br><br>
        **student:**<br>
